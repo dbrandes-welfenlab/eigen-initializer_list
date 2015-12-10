@@ -27,7 +27,7 @@ EIGEN_STRONG_INLINE Matrix(std::initializer_list<double > initlist) : Base()
   int Matrix_size = base().size();
   eigen_assert(initializer_list_size == Matrix_size);
 
-  if (initlist.size() == base().size()){
+  if ((int)initlist.size() == base().size()){
     int i = 0;
     for (auto x: initlist){
        coeffRef(i)=Scalar(x);
