@@ -128,3 +128,23 @@ EIGEN_STRONG_INLINE Matrix(std::initializer_list<Matrix<_Scalar, _Rows_Inner, _C
         i++;
     }
 }
+
+#ifdef EIGEN_MATRIX_PLUGIN1
+#include EIGEN_MATRIX_PLUGIN1
+#endif
+
+#ifdef EIGEN_MATRIX_PLUGIN2
+#include EIGEN_MATRIX_PLUGIN2
+#endif
+
+#ifdef EIGEN_MATRIX_PLUGIN3
+#include EIGEN_MATRIX_PLUGIN3
+#endif
+
+#ifdef EIGEN_MATRIX_PLUGIN4
+#include EIGEN_MATRIX_PLUGIN4
+#endif
+
+#ifdef EIGEN_MATRIX_PLUGIN5
+#include EIGEN_MATRIX_PLUGIN5
+#endif
